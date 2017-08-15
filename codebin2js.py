@@ -37,10 +37,9 @@ except:
     print ""
     
 for i in range(j&0x03):
-    print "0x00,"
+    print "0x00,",
 print ""
 
-print j
 #padding
 for i in range(j, 0x2000-4):
     print "0x90,",
