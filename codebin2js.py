@@ -41,7 +41,7 @@ for i in range(j&0x03):
 print ""
 
 #padding
-for i in range(j, 0x2000-4):
+for i in range(j, 0x4000-4):
     print "0x90,",
 print ""
 print "]"
