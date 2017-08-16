@@ -43,8 +43,8 @@
 .set r31, 31
 
 #load address range to search
-lis r7, 0x1F00 #r7 = 1C000000
-lis r8, 0x5000 #r8 = 1D000000
+lis r7, 0x1B00 #r7 = 1C000000
+lis r8, 0x1D00 #r8 = 1D000000
 
 #Load "LOOK" in r9
 lis r9, 0x4C4F
