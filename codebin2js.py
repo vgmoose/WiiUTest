@@ -18,7 +18,7 @@ for i in range(j&0x03):
     payload += "0x00, "
 payload += "\n"
 
-payload += "0x00, 0x40, 0x00, 0x00,\n"
+payload += "0x00, 0x80, 0x00, 0x00,\n"
 j+=4
 
 try:
@@ -36,7 +36,7 @@ payload += "\n"
 
 #nop
 nop = "";
-for i in range(j, 0x4000-4, 4):
+for i in range(j, 0x8000, 4):
     nop += "0x60, 0x00, 0x00, 0x00, "
 nop += "\n"
 
